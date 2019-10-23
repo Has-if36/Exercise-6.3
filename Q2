@@ -1,27 +1,31 @@
 #include <iostream>
 using namespace std;
 
+//prototype
 void swap(int &, int &);
 
 int main() {
+	//original number
 	int x = 79, y = 10;
 	cout << "The ori of x =" << x << endl;
 	cout << "The ori of y =" << y << endl;
 
 	swap(x, y);
   
-  //testing
+  	//testing for swapping
 	cout << "The current of x =" << x << endl;
 	cout << "The current of y =" << y << endl;
 
 	return 0;
 }
 
+//define for swapping number
 void swap(int &a, int &b) {
 	int temp = b;
 	b = a;
 	a = temp;
 
+	//display swapped number
 	cout << "The current of x =" << a << endl;
 	cout << "The current of y =" << b << endl;
 }
