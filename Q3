@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+//const for liter to gallon
+double const gallon = 0.264179;
+
+//prototype
+double kmpg(double, double);
+
+int main() {
+	double fuel, km;
+
+  //get input
+	cout << "Enter the amount of petrol consumed (in L): ";
+	cin >> fuel;
+	cout << "Enter the distance travelled (in km): ";
+	cin >> km;
+
+  //disp output
+	cout<< "The car uses "<<kmpg(fuel, km)<<" killometer per gallon\n";
+}
+
+//define kmpg for conversion and calculation
+double kmpg(double x, double y) {
+	return y/(x*gallon);
+}
