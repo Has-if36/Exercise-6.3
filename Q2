@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+void swap(int &, int &);
+
+int main() {
+	int x = 79, y = 10;
+	cout << "The ori of x =" << x << endl;
+	cout << "The ori of y =" << y << endl;
+
+	swap(x, y);
+  
+  //testing
+	cout << "The current of x =" << x << endl;
+	cout << "The current of y =" << y << endl;
+
+	return 0;
+}
+
+void swap(int &a, int &b) {
+	int temp = b;
+	b = a;
+	a = temp;
+
+	cout << "The current of x =" << a << endl;
+	cout << "The current of y =" << b << endl;
+}
